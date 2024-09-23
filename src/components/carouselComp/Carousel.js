@@ -39,7 +39,9 @@ const Carousel = () => {
           <div className="carousel-item active">
             <img src={images[currentIndex].src} alt="Current slide" />
             <div className="carousel-info">
-              <h3 className="image-content-year">{images[currentIndex].year}</h3>
+              <h3 className="image-content-year">
+                {images[currentIndex].year}
+              </h3>
               <p className="image-content-data">
                 {images[currentIndex].description}
               </p>

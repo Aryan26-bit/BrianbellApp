@@ -15,9 +15,7 @@
   height: 100%;
 }
 
-
-.right-cta-image-index
-{
+.right-cta-image-index {
   z-index: 3;
 }
 .find-out-more-image {
@@ -29,7 +27,12 @@
 }
 
 .find-out-more-content-box {
-  @include verticalFlex($width: 46%, $align: flex-start, $justify: normal, $gap-size: 2vh);
+  @include verticalFlex(
+    $width: 46%,
+    $align: flex-start,
+    $justify: normal,
+    $gap-size: 2vh
+  );
   z-index: 2;
 }
 
@@ -41,7 +44,12 @@
 }
 
 .find-out-more-content {
-  @include verticalFlex($align: flex-start, $justify: normal, $width: auto, $gap-size: 0vh);
+  @include verticalFlex(
+    $align: flex-start,
+    $justify: normal,
+    $width: auto,
+    $gap-size: 0vh
+  );
   color: var(--black-color);
   line-height: 2vh;
   font-size: 1.5vh;

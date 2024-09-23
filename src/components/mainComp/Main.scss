@@ -21,7 +21,7 @@
 
 .home-about-heading {
   font-size: 3vh;
-  color:var(--white-color)
+  color: var(--white-color);
 }
 
 .right-cta-content-data,
@@ -29,11 +29,9 @@
   line-height: 3vh;
 }
 
-
 .main-container {
   overflow: hidden;
 }
-
 
 .about-us-container {
   @include horizontalFlex($gap-size: 0vh, $width: auto);
@@ -62,11 +60,21 @@
 }
 
 .home-tool-content {
-  @include horizontalFlex($gap-size: 8vh, $width: auto, $align: normal, $justify: normal);
+  @include horizontalFlex(
+    $gap-size: 8vh,
+    $width: auto,
+    $align: normal,
+    $justify: normal
+  );
 }
 
 .home-about-inside-content {
-  @include verticalFlex($align: flex-start, $justify: normal, $gap-size: 0vh, $width: auto);
+  @include verticalFlex(
+    $align: flex-start,
+    $justify: normal,
+    $gap-size: 0vh,
+    $width: auto
+  );
   font-size: 1.3vh;
   line-height: 2vh;
 
@@ -121,10 +129,20 @@
 .right-cta-content,
 .left-cta-content {
   align-self: flex-start;
-  @include verticalFlex($align: normal, $justify: normal, $width: auto, $gap-size: 0vh);
+  @include verticalFlex(
+    $align: normal,
+    $justify: normal,
+    $width: auto,
+    $gap-size: 0vh
+  );
 }
 
 .right-cta-content-data,
 .left-cta-content-data {
-  @include verticalFlex($align: flex-start, $justify: normal, $width: auto, $gap-size: 0vh);
+  @include verticalFlex(
+    $align: flex-start,
+    $justify: normal,
+    $width: auto,
+    $gap-size: 0vh
+  );
 }

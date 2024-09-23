@@ -31,42 +31,47 @@ const Navbar = () => {
         </div>
       </div>
 
+      <div className="navbar-new">
+        <div className="navbar-logo-new">
+          <img src="\images\picture_navbar.png" />
+        </div>
 
+        <div className="navbar-categories-new">
+          <button className="category-btn">
+            {" "}
+            <BiCategoryAlt />
+          </button>
+          <button className="categories-btn-new">Shop categories</button>
+          <button className="category-arrow-down">
+            {" "}
+            <IoIosArrowDown />
+          </button>
+        </div>
 
-<div className="navbar-new">
-      <div className="navbar-logo-new">
-      <img src="\images\picture_navbar.png" />
-      </div>
+        <div className="navbar-search-new">
+          <div className="search-container-new">
+            <IoSearch className="search-icon" />
+            <input
+              type="text"
+              placeholder="Search product catalogue..."
+              className="search-input-new"
+            />
+          </div>
+        </div>
 
-      <div className="navbar-categories-new">
-        <button className="category-btn">  <BiCategoryAlt/></button>
-        <button className="categories-btn-new">Shop categories</button>
-        <button className="category-arrow-down">  <IoIosArrowDown /></button>
-      </div>
-
-
-
-      <div className="navbar-search-new">
-        <div className="search-container-new">
-          <IoSearch className="search-icon" />
-          <input
-            type="text"
-            placeholder="Search product catalogue..."
-            className="search-input-new"
-          />
+        <div className="navbar-icons-new">
+          <button className="icon-btn-new">
+            <span>
+              {" "}
+              <CgProfile />
+            </span>
+            <span className="login-name">Login</span>
+          </button>
+          <button className="icon-btn-new">
+            <FaShoppingCart />
+          </button>
         </div>
       </div>
-
-      <div className="navbar-icons-new">
-        <button className="icon-btn-new">
-       <span> <CgProfile/></span>
-       <span className="login-name">Login</span>
-        </button>
-        <button className="icon-btn-new">
-        <FaShoppingCart/>
-        </button>
-      </div>
-    </div>
     </div>
   );
 };

@@ -2,7 +2,12 @@
 @import "./../../index.scss";
 
 .top-container {
-  @include verticalFlex($gap-size:0vh,$width:auto,$align:normal,$justify:normal);
+  @include verticalFlex(
+    $gap-size: 0vh,
+    $width: auto,
+    $align: normal,
+    $justify: normal
+  );
   background-color: var(--white-color);
   position: sticky;
   z-index: 10;
@@ -10,20 +15,23 @@
 }
 
 .login-cart {
-  @include horizontalFlex($gap-size:2vh,$justify:normal,$width:auto);
-
+  @include horizontalFlex($gap-size: 2vh, $justify: normal, $width: auto);
 }
 
 .phone-number {
-  @include horizontalFlex($justify:normal,$width:auto);
-
+  @include horizontalFlex($justify: normal, $width: auto);
 }
 
 .navbar-shop-categories {
-  @include horizontalFlex($gap-size:2vh,$width:auto,$align:normal,$justify:normal);
+  @include horizontalFlex(
+    $gap-size: 2vh,
+    $width: auto,
+    $align: normal,
+    $justify: normal
+  );
 }
 .navbar-container {
-  @include horizontalFlex($gap-size:0vh,$width:auto);
+  @include horizontalFlex($gap-size: 0vh, $width: auto);
   padding: 1vh 10vh 1vh 10vh;
   background-color: var(--red-color);
   color: var(--white-color);
@@ -32,28 +40,28 @@
   font-size: 1.5vh;
 }
 
-
-
 .phone-number {
   color: var(--white-color);
 }
 
 .about-contact {
-  @include horizontalFlex($gap-size:2vh,$align:normal,$justify:normal,$width:auto);
-
+  @include horizontalFlex(
+    $gap-size: 2vh,
+    $align: normal,
+    $justify: normal,
+    $width: auto
+  );
 }
 
 .shop-now {
-  @include horizontalFlex($align:normal,$justify:normal,$width:auto);
-  
+  @include horizontalFlex($align: normal, $justify: normal, $width: auto);
 }
 
 .navbar-search-container {
-  @include horizontalFlex($width:auto,$gap-size:0vh);
+  @include horizontalFlex($width: auto, $gap-size: 0vh);
 
   margin-top: 1vh;
   padding: 2vh;
- 
 }
 
 .search-input {
@@ -63,7 +71,7 @@
 }
 
 .search-container {
-  @include horizontalFlex($gap-size:0vh);
+  @include horizontalFlex($gap-size: 0vh);
   padding-left: 8vh;
   padding-right: 8vh;
 }
@@ -87,7 +95,7 @@
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  color: var(--red-color); 
+  color: var(--red-color);
 }
 
 .navbar-logo-new {
@@ -130,22 +138,19 @@
 
 .search-input-new {
   width: 100%;
-  padding: 8px 40px; 
+  padding: 8px 40px;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
 }
 
-
-.category-btn
-{
+.category-btn {
   border: none;
   font-size: 2vh;
   background: none;
   color: var(--red-color);
 }
 
-.category-arrow-down
-{
+.category-arrow-down {
   border: none;
   font-size: 2vh;
   background: none;
@@ -169,13 +174,11 @@
   cursor: pointer;
 }
 
-.login-name
-{
+.login-name {
   color: var(--black-color);
   font-weight: 600;
   font-size: 1.5vh;
 }
-
 
 @media (max-width: 768px) {
   .search-input {
