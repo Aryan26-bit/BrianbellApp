@@ -1,0 +1,159 @@
+.home-about-text
+{
+    color:#FAE000;
+    font-size: 1.5vh;
+}
+
+.main-container
+{
+    overflow: hidden;
+    // display: flex;
+    // flex-direction: column;
+
+}
+
+.main-bottom-vector-image
+{
+    width: 15%;
+    position: absolute;
+    left: 0px;
+    height: 97%;
+    top: -24%;
+    z-index: -1;
+}
+.vector-image-about
+{
+    // style={{position:"absolute",width:"50%",height:"30%",}}
+
+    position:absolute;
+    width: 100%;
+top:0px;
+bottom: 0px;
+left:130px;
+    height: 100%;
+}
+
+.tool-power-text
+{
+    color:#FAE000;
+    opacity: 0.5;
+    font-size: 1.5vh;
+}
+
+.home-tool-content
+{
+    display: flex;
+    flex-direction: row;
+   gap: 8vh;
+}
+.about-us-content
+{
+    display: flex;
+    padding-left: 7vh;
+    color: #fff;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: flex-start;
+}
+
+.about-us-image
+{
+width: 47%;
+// height: 20%;
+margin-bottom: -14vh;
+}
+.home-about-heading
+{
+font-weight:600;
+font-size: 3vh;
+}
+
+.about-us-container
+{
+    position: relative;
+    background-color: #EC2E40;
+    padding: 0vh;
+    padding-left: 3vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.home-about-inside-content
+{
+    font-size: 1.3vh;
+    display: flex;
+    line-height: 2vh;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-ctc-container
+{
+    display: flex;
+    flex-direction: row;
+padding-left: 7vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-cta-image
+{
+    width: 43%;
+    margin-right: 10vh;
+    // height: 30%;
+}
+
+.cta-content-right
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-right: -11vh;
+    align-items: flex-start;
+    width: 50%; 
+}
+
+
+.right-cta-content,.left-cta-content
+{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+
+}
+
+.cta-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.left-right-Cta-section
+{
+    position: relative;
+    display: flex;
+    padding: 5vh;
+    flex-direction: column;
+    margin-top: 12vh;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left-ctc-container
+{
+    display: flex;
+    padding-top:8vh;
+    padding-left: 6vh;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}

@@ -1,0 +1,58 @@
+
+.find-out-more-container
+{
+    position: relative;
+background-color:#f8f7f5;
+display: flex;
+padding: 3vh;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.btn-find-more
+{
+    color:#fff;
+    border: none;
+    outline: none;
+    padding: 1vh 1.5vh;
+    background-color:#EC2E40;
+}
+
+.find-out-more-heading
+{
+    font-weight: bold;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+    font-size: 3.5vh;
+    color: black;
+
+}
+
+.find-out-more-vector-image
+{
+    position: absolute;
+    width: 60%;
+    right: 11%;
+    height: 100%;
+}
+
+.find-out-more-content
+{
+    color:#262626;
+    line-height: 2vh;
+    font-size: 1.5vh;
+}
+
+
+.find-out-more-content-box
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    z-index: 2;
+    align-items: flex-start;
+    width: 50%;
+}

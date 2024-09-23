@@ -1,0 +1,98 @@
+
+.top-container
+{
+display: flex;
+flex-direction: column;
+// padding: 2vh;
+}
+
+.login-cart
+{
+    display: flex;
+    gap: 2vh;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.phone-number
+{
+    display: flex;
+    gap: 1vh;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-shop-categories
+{
+    display: flex;
+    flex-direction: row;
+    gap:2vh;
+}
+.navbar-container
+{
+    padding: 1vh 10vh 1vh 10vh;
+background-color: #EC2E40;
+color: #fff;
+margin-top: 1vh;
+margin-top: 0vh;
+font-size: 1.5vh;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar-about
+{
+    color: grey;
+}
+
+.phone-number
+{
+    color: #fff;
+}
+
+.about-contact
+{
+display: flex;
+flex-direction: row;
+gap: 2vh;
+}
+
+.shop-now
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+.navbar-search-container
+{
+
+    display: flex;
+    margin-top: 1vh;
+    padding: 2vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-input
+{
+    padding: 1vh;
+    width: 100%;
+    position: relative;
+}
+
+.search-container{
+
+padding-left:8vh;
+padding-right: 8vh;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width:100%;
+}
