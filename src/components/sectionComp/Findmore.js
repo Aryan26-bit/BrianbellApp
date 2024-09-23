@@ -1,7 +1,7 @@
 import React from "react";
-import "./../imageComp/Find.scss";
+import "./Findmore.scss";
 
-const Find = () => {
+const Findmore = () => {
   return (
     <div className="find-out-more-container">
       <img
@@ -49,4 +49,4 @@ const Find = () => {
   );
 };
 
-export default Find;
+export default Findmore;
