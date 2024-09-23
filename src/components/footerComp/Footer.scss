@@ -1,14 +1,32 @@
+@import "./../../general";
+
+@import "./../../index.scss";
+
 .footer {
-  background-color: #EC2E40;
-  color: white;
-  clip-path: polygon(0 0, 0% 20%, 0 49%, 0 100%, 20% 100%, 50% 100%, 100% 100%, 100% 64%, 100% 50%, 100% 7%, 98% 0, 48% 0);
+  background-color: var(--red-color);
+  color: var(--white-color);
+  clip-path: polygon(
+    0 0,
+    0% 20%,
+    0 49%,
+    0 100%,
+    20% 100%,
+    50% 100%,
+    100% 100%,
+    100% 64%,
+    100% 50%,
+    100% 6%,
+    98% 0,
+    48% 0
+  );
   padding: 40px;
-  font-family: Arial, sans-serif;
+  // font-family: Arial, sans-serif;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
+  @include horizontalFlex($width:auto,$align:normal,$gap-size:0vh);
+  // display: flex;
+  // justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -19,7 +37,9 @@
   margin: 0 20px;
 }
 
-.footer-column h3, .footer-column h4, .footer-column h5 {
+.footer-column h3,
+.footer-column h4,
+.footer-column h5 {
   font-weight: bold;
 }
 
@@ -28,22 +48,20 @@
   padding: 0;
 }
 
-.location-list-content
-{
-  display:flex;
-  flex-direction:column;
-  align-items: flex-start;
-gap: 1vh;
+.location-list-content {
+  @include verticalFlex($align:flex-start,$justify:normal,$width:auto);
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // gap: 1vh;
 }
-
-
 
 .footer-column ul li {
   margin-bottom: 10px;
 }
 
 .footer-column a {
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -56,8 +74,9 @@ gap: 1vh;
 }
 
 .locations-list {
-  display: flex;
-  justify-content: space-between;
+  @include horizontalFlex($align:normal,$width:auto,$gap-size:0vh);
+  // display: flex;
+  // justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -67,15 +86,16 @@ gap: 1vh;
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include horizontalFlex($gap-size:0vh,$width:auto);
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
   padding-top: 20px;
 }
 
 .footer-links a {
   margin-left: 20px;
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
 }
 

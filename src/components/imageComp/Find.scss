@@ -1,58 +1,73 @@
+@import "./../../general";
+@import "./../../index.scss";
 
-.find-out-more-container
-{
-    position: relative;
-background-color:#f8f7f5;
-display: flex;
-padding: 3vh;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+.find-out-more-container {
+  @include horizontalFlex($width:auto,$gap-size:0vh);
+  // position: relative;
+  background-color: var(--dark-back-grey);
+  // display: flex;
+  padding: 3vh;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // align-items: center;
 }
 
-.btn-find-more
-{
-    color:#fff;
-    border: none;
-    outline: none;
-    padding: 1vh 1.5vh;
-    background-color:#EC2E40;
+.btn-find-more {
+  color: var(--white-color);
+  clip-path: polygon(
+    0 0,
+    0% 20%,
+    0 49%,
+    0 100%,
+    20% 100%,
+    50% 100%,
+    100% 99%,
+    100% 64%,
+    100% 50%,
+    100% 34%,
+    84% 0,
+    48% 0
+  );
+  border: none;
+  outline: none;
+  padding: 1vh 1.5vh;
+  background-color: var(--red-color);
 }
 
-.find-out-more-heading
-{
-    font-weight: bold;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
+.find-out-more-heading {
+  @include verticalFlex($align:flex-start,$justify:normal,$gap-size:0vh);
+  font-weight: 800;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
 
-    font-size: 3.5vh;
-    color: black;
-
+  font-size: 3.5vh;
+  color: var(--black-color);
 }
 
-.find-out-more-vector-image
-{
-    position: absolute;
-    width: 60%;
-    right: 11%;
-    height: 100%;
+.find-out-more-vector-image {
+  position: absolute;
+  width: 60%;
+  right: 11%;
+  height: 100%;
 }
 
-.find-out-more-content
-{
-    color:#262626;
-    line-height: 2vh;
-    font-size: 1.5vh;
+.find-out-more-content {
+  @include verticalFlex($align:flex-start,$justify:normal,$width:auto,$gap-size:0vh);
+  color: var(--black-color);
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  line-height: 2vh;
+  font-size: 1.5vh;
 }
 
-
-.find-out-more-content-box
-{
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-    z-index: 2;
-    align-items: flex-start;
-    width: 50%;
+.find-out-more-content-box {
+  @include verticalFlex($width:46%,$align:flex-start,$justify:normal,$gap-size:2vh);
+  // display: flex;
+  // flex-direction: column;
+  // gap: 2vh;
+  z-index: 2;
+  // align-items: flex-start;
+  // width: 46%;
 }

@@ -1,98 +1,232 @@
 
-.top-container
-{
-display: flex;
-flex-direction: column;
-// padding: 2vh;
+
+
+@import "./../../general";
+@import "./../../index.scss";
+
+.top-container {
+  @include verticalFlex($gap-size:0vh,$width:auto,$align:normal,$justify:normal);
+  background-color: var(--white-color);
+  position: sticky;
+  z-index: 10;
+  top: 0px;
+  // display: flex;
+  // flex-direction: column;
+  // padding: 2vh;
 }
 
-.login-cart
-{
-    display: flex;
-    gap: 2vh;
-    flex-direction: row;
-    align-items: center;
-
-
+.login-cart {
+  @include horizontalFlex($gap-size:2vh,$justify:normal,$width:auto);
+  // display: flex;
+  // gap: 2vh;
+  // flex-direction: row;
+  // align-items: center;
 }
 
-.phone-number
-{
-    display: flex;
-    gap: 1vh;
-    flex-direction: row;
-    align-items: center;
+.phone-number {
+  @include horizontalFlex($justify:normal,$width:auto);
+  // display: flex;
+  // gap: 1vh;
+  // flex-direction: row;
+  // align-items: center;
 }
 
-.navbar-shop-categories
-{
-    display: flex;
-    flex-direction: row;
-    gap:2vh;
+.navbar-shop-categories {
+  @include horizontalFlex($gap-size:2vh,$width:auto,$align:normal,$justify:normal);
+  // display: flex;
+  // flex-direction: row;
+  // gap: 2vh;
 }
-.navbar-container
-{
-    padding: 1vh 10vh 1vh 10vh;
-background-color: #EC2E40;
-color: #fff;
-margin-top: 1vh;
-margin-top: 0vh;
-font-size: 1.5vh;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-}
-
-.navbar-about
-{
-    color: grey;
+.navbar-container {
+  @include horizontalFlex($gap-size:0vh,$width:auto);
+  padding: 1vh 10vh 1vh 10vh;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  margin-top: 1vh;
+  margin-top: 0vh;
+  font-size: 1.5vh;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // align-items: center;
 }
 
-.phone-number
-{
-    color: #fff;
+// .navbar-about {
+//   color: grey;
+// }
+
+.phone-number {
+  color: var(--white-color);
 }
 
-.about-contact
-{
-display: flex;
-flex-direction: row;
-gap: 2vh;
+.about-contact {
+  @include horizontalFlex($gap-size:2vh,$align:normal,$justify:normal,$width:auto);
+  // display: flex;
+  // flex-direction: row;
+  // gap: 2vh;
 }
 
-.shop-now
-{
-    display: flex;
-    flex-direction: row;
-    gap: 1vh;
+.shop-now {
+  @include horizontalFlex($align:normal,$justify:normal,$width:auto);
+  // display: flex;
+  // flex-direction: row;
+  // gap: 1vh;
 }
 
-.navbar-search-container
-{
-
-    display: flex;
-    margin-top: 1vh;
-    padding: 2vh;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.navbar-search-container {
+  @include horizontalFlex($width:auto,$gap-size:0vh);
+  // display: flex;
+  margin-top: 1vh;
+  padding: 2vh;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: space-between;
 }
 
-.search-input
+.search-input {
+  padding: 1vh;
+  width: 100%;
+  position: relative;
+}
+
+.search-container {
+  @include horizontalFlex($gap-size:0vh);
+  padding-left: 8vh;
+  padding-right: 8vh;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: space-between;
+  // width: 100%;
+}
+
+
+/* Styling for the navigation bar container */
+.navbarr {
+  padding: 2vh 9vh 2vh 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-color);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-containerr {
+  position: relative;
+  width: 60%;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: var(--red-color); /* You can adjust the color */
+}
+
+/* Logo section styles */
+.navbar-logoo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-logoo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--red-color);
+}
+
+/* Shop Categories button styles */
+.navbar-categoriess {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 7vh;
+}
+
+.categories-btnn {
+  background: none;
+  border: none;
+  font-size: 1.5vh;
+  font-weight: 600;
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+// .categories-btnn:after {
+//   content: '▼'; /* Dropdown arrow */
+//   margin-left: 5px;
+//   font-size: 0.8rem;
+// }
+
+/* Search bar styles */
+.navbar-searchh {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-inputt {
+  width: 100%;
+  padding: 8px 40px; 
+  // border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+
+
+.category-btn
 {
-    padding: 1vh;
+  border: none;
+  font-size: 2vh;
+  background: none;
+  color: var(--red-color);
+}
+
+.category-arrow-down
+{
+  border: none;
+  font-size: 2vh;
+  background: none;
+  color: var(--red-color);
+}
+/* Icons for login and cart */
+.navbar-iconss {
+  display: flex;
+  align-items: center;
+}
+
+.icon-btnn {
+  display: flex;
+  gap: 1vh;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  color: var(--red-color);
+  cursor: pointer;
+}
+
+.login-name
+{
+  color: var(--black-color);
+  font-weight: 600;
+  font-size: 1.5vh;
+}
+
+// .icon-btnn i {
+//   font-size: 1.5rem;
+// }
+
+/* Adding some responsiveness */
+@media (max-width: 768px) {
+  .search-input {
     width: 100%;
-    position: relative;
-}
-
-.search-container{
-
-padding-left:8vh;
-padding-right: 8vh;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-width:100%;
+  }
 }
