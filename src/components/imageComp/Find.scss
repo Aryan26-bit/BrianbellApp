@@ -2,14 +2,49 @@
 @import "./../../index.scss";
 
 .find-out-more-container {
-  @include horizontalFlex($width:auto,$gap-size:0vh);
-  // position: relative;
+  @include horizontalFlex($width: auto, $gap-size: 0vh);
   background-color: var(--dark-back-grey);
-  // display: flex;
   padding: 3vh;
-  // flex-direction: row;
-  // justify-content: space-between;
-  // align-items: center;
+  position: relative;
+}
+
+.find-out-more-vector-image {
+  position: absolute;
+  width: 60%;
+  right: 11%;
+  height: 100%;
+}
+
+
+.right-cta-image-index
+{
+  z-index: 3;
+}
+.find-out-more-image {
+  z-index: 3;
+  img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.find-out-more-content-box {
+  @include verticalFlex($width: 46%, $align: flex-start, $justify: normal, $gap-size: 2vh);
+  z-index: 2;
+}
+
+.find-out-more-heading {
+  @include verticalFlex($align: flex-start, $justify: normal, $gap-size: 0vh);
+  font-weight: 800;
+  font-size: 3.5vh;
+  color: var(--black-color);
+}
+
+.find-out-more-content {
+  @include verticalFlex($align: flex-start, $justify: normal, $width: auto, $gap-size: 0vh);
+  color: var(--black-color);
+  line-height: 2vh;
+  font-size: 1.5vh;
 }
 
 .btn-find-more {
@@ -32,42 +67,4 @@
   outline: none;
   padding: 1vh 1.5vh;
   background-color: var(--red-color);
-}
-
-.find-out-more-heading {
-  @include verticalFlex($align:flex-start,$justify:normal,$gap-size:0vh);
-  font-weight: 800;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-start;
-
-  font-size: 3.5vh;
-  color: var(--black-color);
-}
-
-.find-out-more-vector-image {
-  position: absolute;
-  width: 60%;
-  right: 11%;
-  height: 100%;
-}
-
-.find-out-more-content {
-  @include verticalFlex($align:flex-start,$justify:normal,$width:auto,$gap-size:0vh);
-  color: var(--black-color);
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-start;
-  line-height: 2vh;
-  font-size: 1.5vh;
-}
-
-.find-out-more-content-box {
-  @include verticalFlex($width:46%,$align:flex-start,$justify:normal,$gap-size:2vh);
-  // display: flex;
-  // flex-direction: column;
-  // gap: 2vh;
-  z-index: 2;
-  // align-items: flex-start;
-  // width: 46%;
 }

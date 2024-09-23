@@ -1,10 +1,9 @@
 import React from "react";
 import "./../subscribeComp/Subscribe.scss";
-import { GoArrowRight } from "react-icons/go";
 
 const Subscribe = () => {
   return (
-    <div style={{ backgroundColor: "#f8f7f5" }}>
+    <div className="subscribe-outer-container">
       <div className="subscribe-container-box">
         <div className="subscribe-container">
           {" "}
@@ -21,23 +20,20 @@ const Subscribe = () => {
           </p>
         </div>
         <div className="email-btn-alignment">
-          <span style={{ width: "50vh" }}>
+          <span className="email-input-type-size">
             <input
               type="email"
               placeholder="Enter your email address"
               className="input-box"
             />
           </span>
-          <span style={{ position: "relative" }}>
+          <span>
             <input
               type="button"
               placeholder="Subscribe"
               value="Subscribe"
               className="btn-subscribe"
             />{" "}
-            <span style={{ position: "absolute", top: "8px", right: "1px" }}>
-              {/* <GoArrowRight style={{ color: "#fff", fontSize: "2vh" }} /> */}
-            </span>
           </span>
         </div>
       </div>

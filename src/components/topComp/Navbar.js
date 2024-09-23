@@ -4,7 +4,6 @@ import { CgProfile } from "react-icons/cg";
 import { IoSearch } from "react-icons/io5";
 import { BiCategoryAlt } from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
-// import { PiLineVertical } from "react-icons/pi";
 import { IoCallOutline } from "react-icons/io5";
 
 import "./../topComp/Navbar.scss";
@@ -12,7 +11,6 @@ import "./../topComp/Navbar.scss";
 const Navbar = () => {
   return (
     <div className="top-container">
-      {/* <h1 className='navbar-about'>About</h1> */}
       <div className="navbar-container">
         <div className="phone-number">
           <span>
@@ -33,109 +31,38 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* <div className="navbar-search-container">
-        <div className="search-container">
-          <div>
-            <img src="\images\picture_navbar.png" />
-          </div>
-          <div>
-            <PiLineVertical style={{ fontSize: "3vh" }} />
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              gap: "3vh",
-              alignItems: "center",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                gap: "1vh",
-                alignItems: "center",
-              }}
-            >
-              <span>
-                {" "}
-                <BiCategoryAlt
-                  style={{ color: "#EC2E40", fontSize: "2.5vh" }}
-                />
-              </span>
-              <span>shop Categories</span>
-              <span>
-                <IoIosArrowDown style={{ color: "#EC2E40" }} />
-              </span>
-            </div>
-            <div style={{ width: "50vh" }}>
-              <input
-                type="search"
-                placeholder="search product catalogie"
-                className="search-input"
-              />
-              <IoSearch
-                style={{
-                  position: "absolute",
-                   top: "8.5%",
-                  right: "20%",
-                  color: "#EC2E40",
-                }}
-              />
-            </div>
-          </div>
-
-         <div className="login-cart">
-            <span>
-              <CgProfile style={{ color: "#EC2E40", fontSize: "2.5vh" }} />
-            </span>
-            <span>login</span>
-            <div>
-              <FaShoppingCart style={{ color: "#EC2E40", fontSize: "2.5vh" }} />
-            </div>
-          </div>
-        </div>
-      </div> */}
 
 
-<div className="navbarr">
-      <div className="navbar-logoo">
+<div className="navbar-new">
+      <div className="navbar-logo-new">
       <img src="\images\picture_navbar.png" />
       </div>
 
-      <div className="navbar-categoriess">
+      <div className="navbar-categories-new">
         <button className="category-btn">  <BiCategoryAlt/></button>
-        <button className="categories-btnn">Shop categories</button>
+        <button className="categories-btn-new">Shop categories</button>
         <button className="category-arrow-down">  <IoIosArrowDown /></button>
       </div>
-{/* 
-      <div className="navbar-searchh">
-        <input
-          type="text"
-          placeholder="Search product catalogue..."
-          className="search-inputt"
-        />
-      </div> */}
 
 
-      <div className="navbar-searchh">
-        <div className="search-containerr">
+
+      <div className="navbar-search-new">
+        <div className="search-container-new">
           <IoSearch className="search-icon" />
           <input
             type="text"
             placeholder="Search product catalogue..."
-            className="search-inputt"
+            className="search-input-new"
           />
         </div>
       </div>
 
-      <div className="navbar-iconss">
-        <button className="icon-btnn">
+      <div className="navbar-icons-new">
+        <button className="icon-btn-new">
        <span> <CgProfile/></span>
        <span className="login-name">Login</span>
         </button>
-        <button className="icon-btnn">
+        <button className="icon-btn-new">
         <FaShoppingCart/>
         </button>
       </div>

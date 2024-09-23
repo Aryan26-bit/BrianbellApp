@@ -3,7 +3,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: "#E3DED5" }}>
+    <div className="outer-footer-container">
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-column brand">

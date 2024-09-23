@@ -8,7 +8,7 @@ const Find = () => {
         src="\images\find-out-more-vector.png"
         className="find-out-more-vector-image"
       />
-      <div style={{ zIndex: "3" }}>
+      <div className="right-cta-image-index">
         <img src="\images\rightcta.png" width="80%" height="80%" />
       </div>
       <div className="find-out-more-content-box">
