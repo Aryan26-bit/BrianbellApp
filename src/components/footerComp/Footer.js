@@ -107,10 +107,10 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>Copyright 2024 Brian Bell Group.</p>
           <div className="footer-links">
-            <a href="#" alt="">
+            <a>
               Shipping & Returns Policy
             </a>
-            <a href="#" alt="">
+            <a>
               Privacy Policy
             </a>
           </div>
