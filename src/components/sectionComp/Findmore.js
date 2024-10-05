@@ -9,7 +9,7 @@ const Findmore = () => {
         className="find-out-more-vector-image"
       />
       <div className="right-cta-image-index">
-        <img src="\images\rightcta.png" width="80%" height="80%" />
+        <img src="\images\rightcta.png" width="80%" height="80%" alt=""/>
       </div>
       <div className="find-out-more-content-box">
         <div className="find-out-more-heading">

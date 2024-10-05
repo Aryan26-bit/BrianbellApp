@@ -34,7 +34,7 @@ const Main = () => {
       </div>
 
       <div className="left-right-Cta-section">
-        <img src="\images\main_back.png" className="main-bottom-vector-image" />
+        <img src="\images\main_back.png" className="main-bottom-vector-image" alt="main-back-image"/>
         <div className="right-ctc-container">
           <img
             src="\images\rightcta.png"
