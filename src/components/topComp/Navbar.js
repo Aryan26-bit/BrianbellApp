@@ -33,7 +33,7 @@ const Navbar = () => {
 
       <div className="navbar-new">
         <div className="navbar-logo-new">
-          <img src="\images\picture_navbar.png" />
+          <img src="\images\picture_navbar.png" alt="picture-image" />
         </div>
 
         <div className="navbar-categories-new">

@@ -5,7 +5,11 @@ const Main = () => {
   return (
     <div className="main-container">
       <div className="about-us-container">
-        <img src="\images\about-us-vector.png" className="vector-image-about" />
+        <img
+          src="\images\about-us-vector.png"
+          className="vector-image-about"
+          alt="vector-image"
+        />
 
         <div className="about-us-content">
           <div className="home-tool-content">
@@ -22,15 +26,28 @@ const Main = () => {
           </div>
         </div>
 
-        <img src="\images\aboutUS.png" className="about-us-image" />
+        <img
+          src="\images\aboutUS.png"
+          className="about-us-image"
+          alt="about-us-image"
+        />
       </div>
 
       <div className="left-right-Cta-section">
         <img src="\images\main_back.png" className="main-bottom-vector-image" />
         <div className="right-ctc-container">
-          <img src="\images\rightcta.png" className="right-cta-image" />
+          <img
+            src="\images\rightcta.png"
+            className="right-cta-image"
+            alt="person-image-work"
+          />
           <div className="cta-content-right">
-            <img src="\images\Frame.png" width="10%" height="5%" />
+            <img
+              src="\images\Frame.png"
+              width="10%"
+              height="5%"
+              alt="person-image-work"
+            />
             <h2 className="right-cta-heading-name">Right CTA Section</h2>
             <div className="right-cta-content">
               <p className="right-cta-content-data">
@@ -69,9 +86,18 @@ const Main = () => {
         </div>
 
         <div className="left-ctc-container">
-          <img src="\images\leftcta.png" className="right-cta-image" />
+          <img
+            src="\images\leftcta.png"
+            className="right-cta-image"
+            alt="left-cta-image"
+          />
           <div className="cta-content">
-            <img src="\images\Frame.png" width="10%" height="5%" />
+            <img
+              src="\images\Frame.png"
+              width="10%"
+              height="5%"
+              alt="frame-image"
+            />
             <h2 className="left-cta-heading-name">Left CTA Section</h2>
             <div className="left-cta-content">
               <p className="right-cta-content-data">

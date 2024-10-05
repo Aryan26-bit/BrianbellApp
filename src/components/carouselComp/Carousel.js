@@ -19,7 +19,11 @@ const Carousel = () => {
 
   return (
     <div className="carousel-container">
-      <img src="\images\Vector.png" className="carousel-vector-image" />
+      <img
+        src="\images\Vector.png"
+        className="carousel-vector-image"
+        alt="vector-image"
+      />
       <h1 className="carousel-header">The history of the Brian Bell Group</h1>
       <p className="carousel-subtitle">
         Lorem ipsum dolor sit amet consectetur. Eu sit velit orci mi. Non odio
